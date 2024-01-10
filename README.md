@@ -2,7 +2,7 @@
 **Author:** [Md Rasul Islam Bapary]  
 **Date:** [27.12.2023]
 
-In this repository I have tried to implement LAG model of my own.I have inspired to implement this from a paper ***A Benchmark Dataset of Endoscopic Images and Novel Deep Learning Method to Detect Intestinal Metaplasia and Gastritis Atrophy*** [Link](https://pubmed.ncbi.nlm.nih.gov/36306301/). I have trained and tested the model ***[LINK](https://github.com/rasul-ai/Local-Attention-Grouping-for-GA-and-IM-classification/blob/main/LAG_model.ipynb)*** with Cats and Dogs dataset. I have contacted with original author for the dataset that they had used. But they did not response. The original model architecture is this.
+In this repository I have tried to implement LAG model of my own.I have inspired to implement this from a paper ***A Benchmark Dataset of Endoscopic Images and Novel Deep Learning Method to Detect Intestinal Metaplasia and Gastritis Atrophy*** [Link](https://pubmed.ncbi.nlm.nih.gov/36306301/). I have trained and tested the model ***[Link](https://github.com/rasul-ai/Local-Attention-Grouping-for-GA-and-IM-classification/blob/main/LAG_model.ipynb)*** with Cats and Dogs dataset. I have contacted with original author for the dataset that they had used. But they did not response. The original model architecture is this.
 ![Model_Architecture](https://github.com/rasul-ai/Local-Attention-Grouping-for-GA-and-IM-classification/blob/main/Images/OriginalModelArchitecture.png)
 
 My model have provided a good result on classifying Cats and Dogs. I will explore it further if I got the dataset from the author of the Original Paper.
@@ -13,4 +13,6 @@ My model have provided a good result on classifying Cats and Dogs. I will explor
 pytorch==1.7+cuda10.1
 torchvision==0.6.0
 numpy==1.19.5
+
+### Please run the code on colab if you do not have local PC with GPU.
 ```
