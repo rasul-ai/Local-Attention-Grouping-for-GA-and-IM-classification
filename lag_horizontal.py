@@ -53,7 +53,7 @@ class LAG(nn.Module):
 
         # Concatenate local + global features
         concatenated_output = torch.cat((backbone_output, ensemble_sub_module), dim=1)
-        print(concatenated_output.shape)
+        # print(concatenated_output.shape)
 
         lag_output = self.classifier(concatenated_output)  # (B, 1)
         return lag_output

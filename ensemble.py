@@ -89,7 +89,7 @@ class Classifier(nn.Module):
         super(Classifier, self).__init__()
         self.flatten = nn.Flatten()
         self.fc_layers = nn.Sequential(
-            nn.Linear(1088 * 8 * 8, 1024),
+            nn.Linear(320 * 8 * 8, 1024),
             nn.ReLU(),
             nn.Dropout(0.3),
 
@@ -100,7 +100,7 @@ class Classifier(nn.Module):
             nn.Linear(512, 128),
             nn.ReLU(),
 
-            nn.Linear(128, 1)  # Output layer for 2-class classification
+            nn.Linear(128, 4)  # Output layer for 2-class classification
         )
 
     def forward(self, x):
